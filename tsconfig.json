@@ -15,7 +15,6 @@
     // Type checking relaxed
     "strict": false,
     "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
 
     // Allow unused code
     "noUnusedLocals": false,
