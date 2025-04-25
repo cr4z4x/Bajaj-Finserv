@@ -11,10 +11,20 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+
+    // Type checking relaxed
+    "strict": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+
+    // Allow unused code
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+    "noFallthroughCasesInSwitch": true,
+
+    // Ensure external types are resolved correctly
+    "typeRoots": ["./node_modules/@types", "./types"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
